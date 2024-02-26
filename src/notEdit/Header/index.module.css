@@ -1,0 +1,11 @@
+.container {
+  display: flex;
+  position: fixed;
+  top: 0;
+  padding-left: 2rem;
+}
+
+.title {
+  font-size: 2em;
+  line-height: 1.1;
+}

@@ -1,30 +1,16 @@
-# React + TypeScript + Vite
+# ペンギンハック ブートキャンプ UI構築編
+このリポジトリは、ペンギンハック ブートキャンプのUI構築編のリポジトリです
+開催日時:2023年3月4日
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 事前準備
+このリポジトリを使うためには、以下のツールが必要です
+- Node.js
+- npm
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## ステップ
+1. [環境構築](https://github.com/tosaken1116/penguin-hack-ui-tutoreal/blob/main/docs/1.md)
+2. [Buttonコンポーネントを作る](https://github.com/tosaken1116/penguin-hack-ui-tutoreal/blob/main/docs/2.md)
+3. [ログインフォームを作る](https://github.com/tosaken1116/penguin-hack-ui-tutoreal/blob/main/docs/3.md)
+4. [ライブラリを利用する](https://github.com/tosaken1116/penguin-hack-ui-tutoreal/blob/main/docs/4.md)
+5. [UIコンポーネントを拡張する](https://github.com/tosaken1116/penguin-hack-ui-tutoreal/blob/main/docs/5.md)
+6. [自分でコンポーネントを作る](https://github.com/tosaken1116/penguin-hack-ui-tutoreal/blob/main/docs/6.md)

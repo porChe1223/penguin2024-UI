@@ -1,0 +1,21 @@
+.container {
+    padding: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 8px;
+    background-color: #333333;
+    gap:16px;
+  }
+
+  .login-button {
+    border-radius: 999px;
+  }
+
+  .password-input{
+    border-width: 5px;
+    border-style: solid;
+    border-image-source: linear-gradient(90deg, skyblue, blue);
+    border-image-slice: 1;
+   }

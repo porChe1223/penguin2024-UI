@@ -1,3 +1,4 @@
+
 #root {
   margin: 0 auto;
   text-align: center;
@@ -5,6 +6,31 @@
 width: 100%;
 height: 100%;
 }
+
+
+.TitleButton{
+  border: none;
+  font-size: 80px;
+  font-weight: 10px;
+  color: transparent;             /*文字を透明にする*/
+    background-clip: text;          /*背景を文字で切り抜く*/
+    background-image : linear-gradient(45deg,
+        green,
+        aqua,
+        blue,
+        purple);
+}
+
+
+.appmbti{
+  font-size: 1em;
+  font-weight: 500;
+  color: black;
+  background-color: white;
+  border-image-slice: 1;
+}  
+
+
 
 .logo {
   height: 6em;
@@ -39,5 +65,5 @@ height: 100%;
 }
 
 .read-the-docs {
-  color: #888;
+  color: white;
 }

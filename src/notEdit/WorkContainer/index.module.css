@@ -13,9 +13,7 @@
   justify-content: center;
   padding:4px;
   border-radius: 8px;
-  background-color: #888888;
-  box-shadow: 0 0 4px 2px #00000022;
-  border: 1px solid #00000022;
+  background-color: white;
   min-width: 400px;
   min-height: 300px;
 }

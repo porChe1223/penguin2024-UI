@@ -1,3 +1,11 @@
+
+# penguin2024-UI
+UIの作成のためにチュートリアルで使ったプロジェクトにCSSを当て、ボタンなどのアクションをコンポーネントとして実装している
+
+
+```
+
+
 # ペンギンハック ブートキャンプ UI構築編
 このリポジトリは、ペンギンハック ブートキャンプのUI構築編のリポジトリです
 
@@ -15,3 +23,6 @@
 4. [ライブラリを利用する](https://github.com/tosaken1116/ui-tutorial/blob/main/docs/4.md)
 5. [UIコンポーネントを拡張する](https://github.com/tosaken1116/ui-tutorial/blob/main/docs/5.md)
 6. [自分でコンポーネントを作る](https://github.com/tosaken1116/ui-tutorial/blob/main/docs/6.md)
+
+
+```

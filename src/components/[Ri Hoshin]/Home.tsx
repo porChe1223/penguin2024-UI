@@ -1,5 +1,6 @@
 import "../../App.css";
 import React, {useState} from "react";
+import useCalculateTotalScore from '../../hooks/useCalculateTotalScore';
 
 import { Routes ,Route ,Link} from 'react-router-dom';
 import {MBTIQuestion} from './MBTI.tsx';
@@ -9,28 +10,16 @@ import { colors } from "@mui/material";
 
 
 function Home() {
+  const { scores, handleScoreChange, calculateTotalScore } = useCalculateTotalScore();
   const quizarray= ["よく新しい友人を作る", "結末を自由に解釈できる本や映画が好きだ", "怒りを抑えきれないときがある", "予定表やリストなどの整理、管理ツール使うのが好き"];
   /一つの項目の点数を累計する/ 
-  const[scores,setScores]=useState([0,0,0,0]);
-  const handleScoreChange=(index: number,value: number) => {
-       const newScores: number[] = [...scores];
-       newScores[index]=value;
-       setScores(newScores);
-  };
-  const calculateTotalScore =() => {
-       return scores.reduce((acc,cur) => acc+cur,0);
-  };
   const calculateMBTIPersonalityType = (scores) => {
     const [I, N, F, J] = scores;
     let personalityType = "";
-    if (I > 50) personalityType += "I";
-    else personalityType += "E";
-    if (N > 50) personalityType += "N";
-    else personalityType += "S";
-    if (F > 50) personalityType += "F";
-    else personalityType += "T";
-    if (J > 50) personalityType += "J";
-    else personalityType += "P";
+    personalityType += I > 50 ? "I" : "E";
+    personalityType += N > 50 ? "N" : "S";
+    personalityType += F > 50 ? "F" : "T";
+    personalityType += J > 50 ? "J" : "P";
 
     return personalityType;
   };
@@ -44,15 +33,16 @@ function Home() {
       <hr></hr>
       
       {quizarray.map((quiz,index) => (
-        <><MBTIQuestion quiz={quiz} setScores={setScores}></MBTIQuestion><hr /></>
+        <div key={index}>
+        <MBTIQuestion quiz={quiz} scores={scores} index={index} handleScoreChange={handleScoreChange} />
+        <hr />
+    </div>
       ))}
-
+      
       <button><Link to="/MBTIResult1" onClick={calculateTotalScore}>診断結果を見る</Link></button>
       <br />
       <br />
-      {/* <Routes>
-        <Route path="/MBTIResult1" element={<Result1 />}></Route> 
-      </Routes> */}
+
     </div>
 
   );

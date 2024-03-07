@@ -1,10 +1,16 @@
 import React from "react";
 import styles from "./MBTI.module.css";
+import calculateMBTIPersonalityType from "./Home.tsx"
 
 export const Result1 = ({ personalityType }) => {
   let anotherName = "";
   let explainType = "";
   let recommendedEngineer = "";
+
+  const mbtiType = calculateMBTIPersonalityType(personalityType);
+
+  switch (mbtiType) {
+}
 
   switch (personalityType) {
     case "ISTJ":
